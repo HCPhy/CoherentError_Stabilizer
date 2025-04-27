@@ -1,0 +1,4 @@
+[Warning: Directory permission denied: /home/parif/spm12] 
+Starting parallel pool (parpool) using the 'Processes' profile ...
+15-Dec-2024 01:53:20: Connected to 1 of 24 parallel pool workers.
+Connected to parallel pool with 24 workers.

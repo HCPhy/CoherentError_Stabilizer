@@ -1,0 +1,32 @@
+[Warning: Directory permission denied: /home/parif/spm12] 
+Starting parallel pool (parpool) using the 'Processes' profile ...
+15-Dec-2024 00:27:57: Job Queued. Waiting for parallel pool job with ID 1 to start ...
+Connected to parallel pool with 60 workers.
+[Warning: A worker aborted during execution of the parfor loop. The parfor loop
+will now run again on the remaining workers.] 
+[> In parallel.internal.parfor/ParforEngine/handleIntervalErrorResult (line 285)
+In parallel.internal.parfor/ParforEngine/getCompleteIntervals (line 227)
+In parallel_function>distributed_execution (line 742)
+In parallel_function (line 574)
+In main (line 40)] 
+[Warning: A worker aborted during execution of the parfor loop. The parfor loop
+will now run again on the remaining workers.] 
+[> In parallel.internal.parfor/ParforEngine/handleIntervalErrorResult (line 285)
+In parallel.internal.parfor/ParforEngine/getCompleteIntervals (line 227)
+In parallel_function>distributed_execution (line 742)
+In parallel_function (line 574)
+In main (line 40)] 
+[Warning: A worker aborted during execution of the parfor loop. The parfor loop
+will now run again on the remaining workers.] 
+[> In parallel.internal.parfor/ParforEngine/handleIntervalErrorResult (line 285)
+In parallel.internal.parfor/ParforEngine/getCompleteIntervals (line 227)
+In parallel_function>distributed_execution (line 742)
+In parallel_function (line 574)
+In main (line 40)] 
+[Warning: A worker aborted during execution of the parfor loop. The parfor loop
+will now run again on the remaining workers.] 
+[> In parallel.internal.parfor/ParforEngine/handleIntervalErrorResult (line 285)
+In parallel.internal.parfor/ParforEngine/getCompleteIntervals (line 227)
+In parallel_function>distributed_execution (line 742)
+In parallel_function (line 574)
+In main (line 40)] 

@@ -1,0 +1,35 @@
+#!/bin/sh
+
+mkdir -p output_files
+
+# Set copy_num to match the number of tasks for simplicity (or any desired value)
+copy_num=12
+
+for l in 128
+do
+  for clusterId in $(seq 2 2)
+  do
+    cat << EOS | sbatch --verbose
+#!/bin/tcsh
+#SBATCH --job-name=tc_noisy
+#SBATCH --partition=long
+#SBATCH --nodes=1
+#SBATCH --ntasks=12
+#SBATCH --cpus-per-task=5
+#SBATCH --mem=240G
+#SBATCH --time=30:00:00
+
+#SBATCH --output=output_files/job_%A_%a.out
+#SBATCH --error=output_files/job_%A_%a.err
+
+module load matlab
+cd \$PWD
+
+# Call the MATLAB code with the parameters:
+# l: length queue
+# clusterId: random seed
+# copy_num: number of copies (this was previously nThreads in your code)
+matlab -batch "main $l $clusterId $copy_num; exit"
+EOS
+  done
+done
