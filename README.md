@@ -1,5 +1,9 @@
 This is the code for stabilizer simulation on the quantum coherent error phase transitions.
 
+For the computations of 
+Liu, Hanchen, and Xiao Chen. "Coherent error induced phase transition." arXiv preprint arXiv:2506.00650 (2025).
+
+
 This simulation code contains three aspects of stabilizer simulations.
 1. The change of logical stabilizers.
 2. The change of coherent quantum informations.
@@ -9,3 +13,4 @@ This simulation code contains three aspects of stabilizer simulations.
 
 The sampling algorithm is shown in the Appendix of the paper. 
 A central performace optimization is the bitpack method of stabilizer tableaus. See the CMEX function in each folder.
+
